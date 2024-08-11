@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalEase - Our Lawyers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .lawyer-card {
+            margin-bottom: 1.5rem;
+            max-width: 300px;
+        }
+        .lawyer-photo {
+            height: 300px;
+            object-fit: cover;
+            max-width: 300px;
+        }
+        .type-button {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/logo.png" height="50" alt="Brand logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="lawyers.html" class="nav-item nav-link active">Lawyers</a>
+                    <a href="info.html" class="nav-item nav-link">Information</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="profile.html" class="nav-item nav-link">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="lawyer-types" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Types of Civil Litigation</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#contractDisputes">Contract Disputes</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#personalInjury">Personal Injury</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#propertyDisputes">Property Disputes</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#employmentDisputes">Employment Disputes</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#familyLaw">Family Law</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#consumerProtection">Consumer Protection</button>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-secondary type-button w-100" data-bs-toggle="collapse" data-bs-target="#environmentalLitigation">Environmental Litigation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lawyer-details" class="py-5">
+        <div class="container">
+            <div id="contractDisputes" class="collapse">
+                <h3 class="text-center">Contract Dispute Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Degree: JD, Harvard Law School</p>
+                                <p class="card-text">Experience: 15 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Degree: JD, Yale Law School</p>
+                                <p class="card-text">Experience: 10 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Davis</h5>
+                                <p class="card-text">Degree: JD, Stanford Law School</p>
+                                <p class="card-text">Experience: 12 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="personalInjury" class="collapse">
+                <h3 class="text-center">Personal Injury Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Michael Brown</h5>
+                                <p class="card-text">Degree: JD, UCLA School of Law</p>
+                                <p class="card-text">Experience: 8 years in personal injury law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Sarah Johnson</h5>
+                                <p class="card-text">Degree: JD, Columbia Law School</p>
+                                <p class="card-text">Experience: 9 years in personal injury law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 6">
+                            <div class="card-body">
+                                <h5 class="card-title">David Wilson</h5>
+                                <p class="card-text">Degree: JD, University of Chicago Law School</p>
+                                <p class="card-text">Experience: 11 years in personal injury law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="propertyDisputes" class="collapse">
+                <h3 class="text-center">Property Dispute Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Degree: JD, Harvard Law School</p>
+                                <p class="card-text">Experience: 15 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Degree: JD, Yale Law School</p>
+                                <p class="card-text">Experience: 10 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Davis</h5>
+                                <p class="card-text">Degree: JD, Stanford Law School</p>
+                                <p class="card-text">Experience: 12 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="employmentDisputes" class="collapse">
+                <h3 class="text-center">Employment Dispute Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Degree: JD, Harvard Law School</p>
+                                <p class="card-text">Experience: 15 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Degree: JD, Yale Law School</p>
+                                <p class="card-text">Experience: 10 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Davis</h5>
+                                <p class="card-text">Degree: JD, Stanford Law School</p>
+                                <p class="card-text">Experience: 12 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="familyLaw" class="collapse">
+                <h3 class="text-center">Family Law Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Degree: JD, Harvard Law School</p>
+                                <p class="card-text">Experience: 15 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Degree: JD, Yale Law School</p>
+                                <p class="card-text">Experience: 10 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Davis</h5>
+                                <p class="card-text">Degree: JD, Stanford Law School</p>
+                                <p class="card-text">Experience: 12 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="consumerProtection" class="collapse">
+                <h3 class="text-center">Consumer Protection Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Degree: JD, Harvard Law School</p>
+                                <p class="card-text">Experience: 15 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Degree: JD, Yale Law School</p>
+                                <p class="card-text">Experience: 10 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Davis</h5>
+                                <p class="card-text">Degree: JD, Stanford Law School</p>
+                                <p class="card-text">Experience: 12 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="environmentalLitigation" class="collapse">
+                <h3 class="text-center">Environmental Litigation Lawyers</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 1">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <p class="card-text">Degree: JD, Harvard Law School</p>
+                                <p class="card-text">Experience: 15 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Smith</h5>
+                                <p class="card-text">Degree: JD, Yale Law School</p>
+                                <p class="card-text">Experience: 10 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card lawyer-card">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="card-img-top lawyer-photo" alt="Lawyer 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Emily Davis</h5>
+                                <p class="card-text">Degree: JD, Stanford Law School</p>
+                                <p class="card-text">Experience: 12 years in contract law.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>LegalEase is dedicated to providing top-notch civil litigation services. Our team of experienced lawyers is here to help you with all your legal needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="lawyers.html" class="text-white">Lawyers</a></li>
+                        <li><a href="info.html" class="text-white">Information</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="profile.html" class="text-white">Contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:info@legalease.com" class="text-white">info@legalease.com</a></li>
+                        <li>Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a></li>
+                        <li class="mt-2">
+                            Follow us:
+                            <a href="https://facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 LegalEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

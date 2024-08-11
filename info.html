@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegalEase - Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .info-item {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/logo.png" height="50" alt="Brand logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="lawyers.html" class="nav-item nav-link">Lawyers</a>
+                    <a href="info.html" class="nav-item nav-link active">Information</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="profile.html" class="nav-item nav-link">My Profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar Section -->
+    <section id="search" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Search Civil Litigation Information</h2>
+            <form id="search-form" class="d-flex justify-content-center">
+                <input id="search-bar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section id="info" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Detailed Information on Civil Litigation</h2>
+            <div id="info-content">
+                <!-- Sample Content - Add more types and details as needed -->
+                <div class="info-item">
+                    <h3>Contract Disputes</h3>
+                    <p>Contract disputes involve disagreements between parties over the terms of a contract. These disputes can arise from issues such as breach of contract, non-performance, or interpretation of contract terms.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Personal Injury</h3>
+                    <p>Personal injury cases involve claims for damages due to injuries sustained by an individual as a result of someone else's negligence or intentional harm. Common examples include car accidents, slip and falls, and medical malpractice.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Property Disputes</h3>
+                    <p>Property disputes can involve conflicts over property boundaries, ownership, or lease agreements. These disputes often require legal intervention to resolve issues related to property rights and usage.</p>
+                </div>
+                <div class="info-item">
+                    <h3>Employment Disputes</h3>
+                    <p>Employment disputes arise between employers and employees regarding issues such as wrongful termination, wage disputes, harassment, and discrimination. Legal resolution may be necessary to address these conflicts.</p>
+                </div>
+                <!-- Add more types and details as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>LegalEase is dedicated to providing top-notch civil litigation services. Our team of experienced lawyers is here to help you with all your legal needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="lawyers.html" class="text-white">Lawyers</a></li>
+                        <li><a href="info.html" class="text-white">Information</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="profile.html" class="text-white">My Profile</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:info@legalease.com" class="text-white">info@legalease.com</a></li>
+                        <li>Phone: <a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a></li>
+                        <li class="mt-2">
+                            Follow us:
+                            <a href="https://facebook.com" target="_blank" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" target="_blank" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="text-white mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 LegalEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            let searchQuery = document.getElementById('search-bar').value.toLowerCase();
+            let infoItems = document.querySelectorAll('.info-item');
+            infoItems.forEach(item => {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(searchQuery)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
